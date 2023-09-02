@@ -7,29 +7,66 @@
 </head>
 <body>
     <h1>잠재 공간 내 보간 후 생성한 음성 예시</h1>
-    <p>이것은 GitHub Pages를 사용하여 만든 간단한 홈페이지입니다.</p>
+    <p>DCGAN,DDIM 두 모델에 잠재 공간 내 두 잠재 벡터를 5개의 구간으로 선형 보간, 구형 보간법을 적용한 결과입니다.</p>
 </body>
     
 <body>
-    <h1>DCGAN의 예시</h1>
-    <h2>z0 in DCGAN</h2>
+    <h2>DCGAN의 예시</h2>
+    <h3>z0 in DCGAN</h3>
     <audio controls>
     <source src="audio_sample/z0_GAN.mp3" type="audio/mpeg">
-</audio>
+    </audio>
+    <h3>z1 in DCGAN</h3>
+    <audio controls>
+    <source src="audio_sample/z1_GAN.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z0과 z1에 5개의 구간으로 선형 보간한 결과</h3>
+    <audio controls>
+    <source src="audio_sample/linear_inter_sample_GAN.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z0과 z1에 5개의 구간으로 구형 보간한 결과</h3>
+    <audio controls>
+    <source src="audio_sample/slerp_inter_sample_GAN.mp3" type="audio/mpeg">
+    </audio>
 </body>
-    
+<br>
 <body>
-    <h1>잠재 공간 내 보간 후 생성한 음성 예시</h1>
-    <p>이것은 GitHub Pages를 사용하여 만든 간단한 홈페이지입니다.</p>
+    <h2>DDIM의 예시</h2>
+    <h3>z0 in DDIM</h3>
+    <audio controls>
+    <source src="audio_sample/z0_Diffusion.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z1 in DDIM</h3>
+    <audio controls>
+    <source src="audio_sample/z1_Diffsuion.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z0과 z1에 5개의 구간으로 선형 보간한 결과</h3>
+    <audio controls>
+    <source src="audio_sample/linear_inter_sample_Diffusion.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z0과 z1에 5개의 구간으로 구형 보간한 결과</h3>
+    <audio controls>
+    <source src="audio_sample/slerp_inter_sample_Diffusion.mp3" type="audio/mpeg">
+    </audio>
 </body>
-    
-<body>
-    <h1>잠재 공간 내 보간 후 생성한 음성 예시</h1>
-    <p>이것은 GitHub Pages를 사용하여 만든 간단한 홈페이지입니다.</p>
-</body>
-    
-<body>
-    <h1>잠재 공간 내 보간 후 생성한 음성 예시</h1>
-    <p>이것은 GitHub Pages를 사용하여 만든 간단한 홈페이지입니다.</p>
+<br>
+ <body>
+    <h2>잠재 공간 내 보간 vs 이미지 공간 내 보간 in DDIM</h2>
+    <h3>z0 in DDIM</h3>
+    <audio controls>
+    <source src="audio_sample/z0_Diffusion.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z1 in DDIM</h3>
+    <audio controls>
+    <source src="audio_sample/z1_Diffsuion.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z0과 z1에 5개의 구간으로 잠재 공간 내에서 구형 보간한 결과</h3>
+    <audio controls>
+    <source src="audio_sample/slerp_inter_sample_Diffusion.mp3" type="audio/mpeg">
+    </audio>
+    <h3>z0과 z1에 5개의 구간으로 이미지 공간 내에서 구형 보간한 결과</h3>
+    <audio controls>
+    <source src="audio_sample/image_slerp_inter_sample_Diffusion.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
